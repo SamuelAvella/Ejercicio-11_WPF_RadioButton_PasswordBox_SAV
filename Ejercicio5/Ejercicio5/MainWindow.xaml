@@ -1,0 +1,17 @@
+﻿<Window x:Class="Ejercicio5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ejercicio 5 - Métodos de Pago" Height="300" Width="400">
+    <Grid>
+        <Label Content="Selecciona un método de pago:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+
+        <RadioButton Content="Tarjeta de Crédito" Name="rbTarjeta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <RadioButton Content="PayPal" Name="rbPayPal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0"/>
+        <RadioButton Content="Transferencia" Name="rbTransferencia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,110,0,0"/>
+
+        <Label Content="Contraseña:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0"/>
+        <PasswordBox Name="pwdPago" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,150,0,0" Width="200"/>
+
+        <Button Name="btnRealizarPago" Content="Realizar pago" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,200,0,0" Width="100" Height="30" Click="btnRealizarPago_Click"/>
+    </Grid>
+</Window>
